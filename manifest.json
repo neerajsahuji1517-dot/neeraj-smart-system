@@ -1,0 +1,5 @@
+{"manifest_version":3,"name":"NEERAJ SYSTEM","version":"1.1.0","description":"NEERAJ SYSTEM - record, edit and replay repetitive browser work with CSV data.",
+"permissions":["storage","unlimitedStorage","tabs","scripting","activeTab"],"host_permissions":["<all_urls>"],
+"background":{"service_worker":"src/background/service-worker.js"},
+"action":{"default_popup":"src/popup/popup.html","default_title":"NEERAJ SYSTEM"},
+"content_scripts":[{"matches":["<all_urls>"],"js":["src/content/content.js"],"run_at":"document_start"}]}
